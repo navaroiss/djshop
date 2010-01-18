@@ -3,6 +3,7 @@ from djshop.shopapps.shop.models import *
 
 class AdminCategory(admin.ModelAdmin):
     list_display = ('catname', 'catparent')
+
     class Media:
         pass
 admin.site.register(Category, AdminCategory)

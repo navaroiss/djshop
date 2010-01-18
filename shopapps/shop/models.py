@@ -27,10 +27,17 @@ class Product(models.Model):
     
     class Meta:
         verbose_name_plural = "Products"
-
+    
 class Image(models.Model):
     imgname = models.ImageField(upload_to='images')
     imgpro = models.ForeignKey(Product, verbose_name="Image of product")
     
     def __unicode__(self):
         return 'Product %d : %s' % (self.imgpro.id, self.imgname)
+    
+    def save(self, *arg, **kwarg):
+        super(Image, self).save(*arg, **kwarg)
+        from djshop.utils.helper import trace, thumnail
+        f = settings.MEDIA_ROOT + "/" + self.get_filename(self.instance, name)
+        trace(f)
+        thumnail(f, 100, 200)
