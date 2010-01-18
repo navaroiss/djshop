@@ -1,0 +1,40 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% block title %}{% trans "Online bags shop" %}{% endblock %}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="robots" content="INDEX,FOLLOW" />
+	<link type="text/css" rel="stylesheet" href="{{media_url}}skin/templates/flight/css/reset.css" media="all"></link>
+	<link type="text/css" rel="stylesheet" href="{{media_url}}skin/templates/flight/css/boxes.css" media="all"></link>
+	<link type="text/css" rel="stylesheet" href="{{media_url}}skin/templates/flight/css/clears.css" media="all"></link>
+	<link type="text/css" rel="stylesheet" href="{{media_url}}skin/templates/flight/css/menu.css" media="all"></link>
+	<link type="text/css" rel="stylesheet" href="{{media_url}}skin/templates/flight/css/leftmenustyle.css" media="all"></link>
+	<!-- 
+	<link rel="icon" href="http://www.flight001.com/skin/frontend/default/redesign/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://www.flight001.com/skin/frontend/default/redesign/favicon.ico" type="image/x-icon" />
+	<link type="text/css" rel="stylesheet" href="http://localhost/skin/templates/flight/css/print.css" media="all"></link>
+	 --> 
+	{% block extrahead %}  {% endblock %}
+</head>
+<body>
+
+<!-- begin header here -->
+{% include 'header.html'%}
+<!-- end header here  -->
+
+<!-- begin content here -->
+{% block content%}
+	<div id="content_checkout">		
+			<div id="rightpart" class="col-right marginbottom20">
+	        	<div class="FloatLeft" id="recommended"></div>        
+			</div>
+	</div>
+{%endblock%}
+<!-- end content here -->
+	
+<!-- begin footer here -->
+{% include 'footer.html'%}
+<!-- end footer here -->

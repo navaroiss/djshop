@@ -1,0 +1,53 @@
+{% load i18n %}
+
+<form action="" method="post" id="newsletter-validate-detail">
+	<div id="footer_red_sect">
+		<div class="FloatLeft paddingtop12"><span class="fontBold fontsize15px">{% trans 'NOW ARRIVING' %}</span><span class="fontsize15px">/ </span>{% trans 'Sign up for the newest travel gift ideas in your inbox' %}</div>
+		<div class="FloatLeft paddingtop12 paddingleft10px"><input onblur="javascript:changeValue(this)" onclick="javascript:changeValue(this)" type="text" maxlength="255" class="inpt_subscriptionbox" name="email" id="newsletter" value="{% trans "Enter your email address" %}" /></div>
+	</div>
+</form>
+
+<script type="text/javascript">
+	function changeValue(inObj){
+		if(inObj.value=='{% trans "Enter your email address" %}'){
+			inObj.value="";
+		}else if(inObj.value==""){
+			inObj.value='{% trans "Enter your email address" %}';
+		}
+	}
+</script>
+
+	<div id="footer_links_sect" class="footer_rgt_corner">
+		<div class="footer_parts">
+			<div class="footer_lftrgt"></div>
+			<div class="footer_lft_corner"></div>
+		</div>
+		<div class="home_footer_dots"></div>
+	
+		<div class="footer_links_parts">
+		<div class="sections">
+			<a href="http://localhost:8000/{{LANGUAGE_CODE}}/about-us/">{% trans 'About Us' %}</a><br />
+			<a href="http://localhost:8000/{{LANGUAGE_CODE}}/store-locations/">{% trans 'Store Locations' %}</a><br />
+			<a target="_blank" href="http://twitter.com/">Twitter</a><br/>
+		</div>
+		
+		<div class="sections">
+			<a href="http://localhost:8000/{{LANGUAGE_CODE}}/return-policy/">{% trans 'Return Policy' %}</a><br />
+			<a href="http://localhost:8000/{{LANGUAGE_CODE}}/privacy/">{% trans 'Privacy Policy' %}</a><br />
+			<a href="http://localhost:8000/{{LANGUAGE_CODE}}/shipping/">{% trans 'Shipping Info' %}</a><br />
+			<a href="http://localhost:8000/{{LANGUAGE_CODE}}/contact-us/">{% trans 'Contact Us' %}</a>
+		</div>
+			
+		</div>
+	
+		<div class="footer_parts">
+			<div class="footer_lftrgt"></div>
+			<div class="footer_rgt_corner"></div>
+		</div>
+	</div>
+
+	<div class="FloatLeft" style="padding-top:50px;">&nbsp;</div>	
+</div>
+
+	</body>
+</html>

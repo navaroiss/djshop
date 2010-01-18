@@ -1,0 +1,73 @@
+{% load i18n %}
+<div id="wrapper">
+    <div id="top" class="">
+	<span class="logo_box"><a href="" class="logo"></a></span>        
+	<div class="rightCorner">
+	<p></p>
+	<p></p>	
+	</div>        
+</div>
+
+<div id="header">
+	<ul id="nav">
+		<li>
+			<a href="/" class="plane" ><img src="{{media_url}}skin/templates/flight/images/btn_home.png" id="plane" /></a>
+		</li>
+		<li class="shop_trip"class="level0 nav-shop-for-your-trip parent">
+			<a href=""  class="shop_trip"><img src="{{media_url}}skin/templates/flight/images/n_shopforyourtrip.gif" id="shop_trip" /></a>
+		</li>
+		<li class="level0 shop_brand" >
+			<a  href="" class="shop_brand"><img src="{{media_url}}skin/templates/flight/images/n_shopbybrand.gif" id="shop_brand" /></a>
+		</li>
+		<li class="level0 nav-f-1-exclusives">
+			<a href="" class="f1exclusive"><img src="{{media_url}}skin/templates/flight/images/n_f1exclusives.gif" id="f1exclusive" /></a>
+		</li>
+		<li class="new_arrival">
+			<a><img src="{{media_url}}skin/templates/flight/images/n_newarrivals.gif" id="new_arrival"/></a>
+		</li>
+		<li class="travel_guide" >
+			<a href="" class="travel_guide"><img src="{{media_url}}skin/templates/flight/images/gifts_offstate.gif" id="travel_guide" /></a>
+		</li>
+		<li class="as_seen">
+			<a class="as_seen"><img src="{{media_url}}skin/templates/flight/images/n_asseenin.gif" id="as_seen" /></a>
+		</li>
+		<li class="level0 store_location" style="margin-right:0px;">
+			<a href="" class="store_location"><img src="{{media_url}}skin/templates/flight/images/btn_store_locater.png" id="store_location" /></a>
+		</li>
+	</ul>
+</div>
+
+<div class="h_mid_content">
+	<div class="FloatLeft pt8 fontBold txt_uppercase">
+		<p>
+			<span style="color: rgb(238, 64, 55); ">
+				<strong>&nbsp;20% OFF SALE</strong>
+			</span>
+			<strong>
+				<span style="color: rgb(255, 0, 0); ">!</span>
+			</strong>
+			<span style="color: rgb(0, 153, 220); "><strong>Use code:</strong></span><strong><span style="color: rgb(0, 204, 255); "> <span style="color: rgb(238, 64, 55); ">&quot;NOWBOARDING&quot;</span> </span><span style="color: rgb(0, 153, 220); ">at checkout. Offer not valid on gift cards.</span></strong>
+		</p>
+	</div>
+	<div class="FloatRight">
+		<div class="FloatLeft" style="padding-top:8px;">
+			{% for lang in LANGUAGES %}
+			<a href="/?language={{ lang.0 }}"><img style="padding-left:5px;padding-right:5px" with="22" height="15" src="{{media_url}}skin/templates/flight/images/flag-{{lang.0}}.png" /></a>
+			{% endfor %}
+		</div>
+		<div style="width:1px;float:left;border-right:1px solid #E2E6E9;margin-top:4px;height:22px;"></div>
+		<div class="FloatLeft" style="height:22px;padding-top:8px;padding-left:10px;padding-right:5px;text-align:right;">
+			{% if user.id %}
+				<a href="/customer/account/logout/" title="{% trans "Log Out" %}" >{% trans "Log Out" %}</a>
+			{% else %}
+				<a href="/customer/account/login/" title="{% trans "Log In" %}" >{% trans "Log In" %}</a>
+			{% endif %}
+		</div>
+		<div style="width:1px;float:left;border-right:1px solid #E2E6E9;margin-top:4px;height:22px;"></div>
+		<div class="FloatLeft" style="height:22px;padding-top:8px;padding-left:10px;padding-right:5px;text-align:right;">
+		<a href="/checkout/cart/" title="{% blocktrans %}Your Cart has {{ items_in_bag }} items{% endblocktrans %}" class="top-link-cart">
+		{% blocktrans %}Your Cart has <strong>{{ items_in_bag }}</strong> items{% endblocktrans %}
+		</a></div>
+		<div class="cartimage"></div>
+	</div>
+</div>	

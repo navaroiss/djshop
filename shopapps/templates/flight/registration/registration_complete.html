@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block content %}
+
+<div style="width: 940px;" class="FloatLeft content-part">
+
+	<div class="page-head">
+	    <h3>{% trans 'New User Account Created'%}</h3>
+	</div>
+      <ul>
+	         <li>
+		          <div class="customer-name">
+		          {% trans 'Welcome! You are now registered as a member' %}
+				</div>
+			</li>
+	   </ul>
+
+</div>
+
+{% endblock %}

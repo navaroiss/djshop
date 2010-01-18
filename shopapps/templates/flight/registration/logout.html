@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% load i18n %}
+
+{% block extrahead %}
+<meta http-equiv="REFRESH" content="3;url=/">
+{% endblock %}
+
+{% block content %}
+
+<div style="width: 940px;" class="FloatLeft content-part">
+
+	<div class="page-head">
+	    <h3>{% trans 'You have been logged out'%}</h3>
+	</div>
+      <ul>
+	         <li>
+		          <div class="customer-name">
+					<p>
+					{% trans 'You will be redirected to the homepage in 3 seconds'%}...
+					<p>
+						<a href="/customer/account/login/">{% trans 'click here to log in again'%}</a>
+					</p>
+				</div>
+			</li>
+	   </ul>
+
+</div>
+
+{% endblock %}

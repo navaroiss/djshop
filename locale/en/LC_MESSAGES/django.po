@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-18 02:13-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: settings.py:107
+msgid "Tiếng Việt"
+msgstr ""
+
+#: settings.py:108
+msgid "English"
+msgstr ""
+
+#: shopapps/registration/forms.py:35
+#: shopapps/templates/flight/registration/login.html:32
+#: shopapps/templates/flight/registration/login.html:33
+#: shopapps/templates/flight/registration/register.html:20
+#: shopapps/templates/flight/registration/register.html:23
+msgid "Username"
+msgstr ""
+
+#: shopapps/registration/forms.py:37
+msgid "First name"
+msgstr ""
+
+#: shopapps/registration/forms.py:39
+msgid "Last name"
+msgstr ""
+
+#: shopapps/registration/forms.py:42
+msgid "Email address"
+msgstr ""
+
+#: shopapps/registration/forms.py:44
+#: shopapps/templates/flight/registration/register.html:60
+#: shopapps/templates/flight/registration/register.html:61
+msgid "Password"
+msgstr ""
+
+#: shopapps/registration/forms.py:46
+msgid "Password (again)"
+msgstr ""
+
+#: shopapps/registration/forms.py:55 shopapps/registration/forms.py:192
+msgid "Usernames can only contain letters, numbers and underscores"
+msgstr ""
+
+#: shopapps/registration/forms.py:60
+msgid "This username is already taken. Please choose another."
+msgstr ""
+
+#: shopapps/registration/forms.py:72 shopapps/registration/forms.py:206
+msgid "You must type the same password each time"
+msgstr ""
+
+#: shopapps/registration/forms.py:111
+msgid ""
+"This email address is already in use. Please supply a different email "
+"address."
+msgstr ""
+
+#: shopapps/registration/forms.py:121
+msgid "I have read and agree to the Terms of Service"
+msgstr ""
+
+#: shopapps/registration/forms.py:130
+msgid "You must agree to the terms to register"
+msgstr ""
+
+#: shopapps/registration/forms.py:155
+msgid ""
+"Registration using free email addresses is prohibited. Please supply a "
+"different email address."
+msgstr ""
+
+#: shopapps/registration/forms.py:175
+msgid "username"
+msgstr ""
+
+#: shopapps/registration/forms.py:178
+msgid "email address"
+msgstr ""
+
+#: shopapps/registration/forms.py:180
+#: shopapps/templates/flight/registration/login.html:37
+msgid "password"
+msgstr ""
+
+#: shopapps/registration/forms.py:182
+msgid "password (again)"
+msgstr ""
+
+#: shopapps/registration/models.py:190
+msgid "user"
+msgstr ""
+
+#: shopapps/registration/models.py:191
+msgid "activation key"
+msgstr ""
+
+#: shopapps/registration/models.py:196
+msgid "registration profile"
+msgstr ""
+
+#: shopapps/registration/models.py:197
+msgid "registration profiles"
+msgstr ""
+
+#: shopapps/templates/flight/base.html:5
+msgid "Online bags shop"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:5
+msgid "NOW ARRIVING"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:5
+msgid "Sign up for the newest travel gift ideas in your inbox"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:6
+#: shopapps/templates/flight/footer.html:12
+#: shopapps/templates/flight/footer.html:15
+msgid "Enter your email address"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:29
+msgid "About Us"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:30
+msgid "Store Locations"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:35
+msgid "Return Policy"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:36
+msgid "Privacy Policy"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:37
+msgid "Shipping Info"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:38
+msgid "Contact Us"
+msgstr ""
+
+#: shopapps/templates/flight/header.html:61
+msgid "Log Out"
+msgstr ""
+
+#: shopapps/templates/flight/header.html:63
+msgid "Log In"
+msgstr ""
+
+#: shopapps/templates/flight/header.html:68
+#, python-format
+msgid "Your Cart has %(items_in_bag)s items"
+msgstr ""
+
+#: shopapps/templates/flight/header.html:69
+#, python-format
+msgid "Your Cart has <strong>%(items_in_bag)s</strong> items"
+msgstr ""
+
+#: shopapps/templates/flight/registration/forgotpassword.html:7
+msgid "Forgot Your Password"
+msgstr ""
+
+#: shopapps/templates/flight/registration/forgotpassword.html:11
+msgid "Retrieve your password here"
+msgstr ""
+
+#: shopapps/templates/flight/registration/forgotpassword.html:12
+msgid "Please enter your email below and we will send you a new password"
+msgstr ""
+
+#: shopapps/templates/flight/registration/forgotpassword.html:16
+msgid "Email Address"
+msgstr ""
+
+#: shopapps/templates/flight/registration/forgotpassword.html:22
+msgid "Back to Login"
+msgstr ""
+
+#: shopapps/templates/flight/registration/forgotpassword.html:25
+#: shopapps/templates/flight/registration/login.html:47
+#: shopapps/templates/flight/registration/register.html:77
+msgid "Required Fields"
+msgstr ""
+
+#: shopapps/templates/flight/registration/login.html:9
+msgid "Log in or Create an Account"
+msgstr ""
+
+#: shopapps/templates/flight/registration/login.html:17
+msgid "New Customers"
+msgstr ""
+
+#: shopapps/templates/flight/registration/login.html:18
+msgid ""
+"By creating an account with our store, you will be able to move through the "
+"checkout process faster, store multiple shipping addresses, view and track "
+"your orders in your account and more."
+msgstr ""
+
+#: shopapps/templates/flight/registration/login.html:24
+msgid "Registered Customers"
+msgstr ""
+
+#: shopapps/templates/flight/registration/login.html:26
+msgid "Your username and password did not match. Please try again"
+msgstr ""
+
+#: shopapps/templates/flight/registration/login.html:29
+msgid "Please enter your username and password for login"
+msgstr ""
+
+#: shopapps/templates/flight/registration/login.html:44
+msgid "Forgot your password"
+msgstr ""
+
+#: shopapps/templates/flight/registration/login.html:56
+#, python-format
+msgid "Welcome, %(user)s"
+msgstr ""
+
+#: shopapps/templates/flight/registration/logout.html:13
+msgid "You have been logged out"
+msgstr ""
+
+#: shopapps/templates/flight/registration/logout.html:19
+msgid "You will be redirected to the homepage in 3 seconds"
+msgstr ""
+
+#: shopapps/templates/flight/registration/logout.html:21
+msgid "click here to log in again"
+msgstr ""
+
+#: shopapps/templates/flight/registration/register.html:8
+msgid "Create an Account"
+msgstr ""
+
+#: shopapps/templates/flight/registration/register.html:28
+msgid "Email"
+msgstr ""
+
+#: shopapps/templates/flight/registration/register.html:31
+#: shopapps/templates/flight/registration/register.html:50
+#: shopapps/templates/flight/registration/register.html:53
+msgid "Last Name"
+msgstr ""
+
+#: shopapps/templates/flight/registration/register.html:41
+#: shopapps/templates/flight/registration/register.html:44
+msgid "First Name"
+msgstr ""
+
+#: shopapps/templates/flight/registration/register.html:65
+#: shopapps/templates/flight/registration/register.html:66
+msgid "Confirm Password"
+msgstr ""
+
+#: shopapps/templates/flight/registration/register.html:73
+msgid "Back"
+msgstr ""
+
+#: shopapps/templates/flight/registration/registration_complete.html:8
+msgid "New User Account Created"
+msgstr ""
+
+#: shopapps/templates/flight/registration/registration_complete.html:13
+msgid "Welcome! You are now registered as a member"
+msgstr ""

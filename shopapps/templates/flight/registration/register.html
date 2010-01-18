@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block content %}
+
+<div style="width: 940px;" class="FloatLeft content-part">
+
+<div class="page-head">
+    <h3>{% trans 'Create an Account'%}</h3>
+</div>
+<form id="form-validate" method="post" action="">
+    <fieldset class="group-select wide">
+    <input type="hidden" value="" name="success_url"/>
+    <input type="hidden" value="" name="error_url"/>
+        <ul>
+
+	         <li>
+		          <div class="customer-name">
+				    <div class="input-box name-firstname">
+				        <label for="firstname">
+				            {% trans 'Username'%} <span class="required">*</span>
+				        </label>
+				        <br/>
+				        <input type="text" class="required-entry input-text" title="{% trans 'Username'%}" value="" name="username" id="username" maxlength="64"/>
+				        {{form.username.errors}}
+				    </div>
+				    <div class="input-box name-lastname">
+				        <label for="lastname">
+				            {% trans 'Email'%} <span class="required">*</span>
+				        </label>
+				        <br/>
+				        <input type="text" class="required-entry input-text" title="{% trans 'Last Name'%}" value="" name="email" id="email" maxlength="64"/>
+				        {{form.email.errors}}
+				    </div>
+				</div>
+			</li>
+	    
+	            <li>
+		         <div class="customer-name">
+				    <div class="input-box name-firstname">
+				        <label for="firstname">
+				            {% trans 'First Name'%} <span class="required">*</span>
+				        </label>
+				        <br/>
+				        <input type="text" class="required-entry input-text" title="{% trans 'First Name'%}" value="" name="first_name" id="first_name" maxlength="64"/>
+				        {{form.first_name.errors}}
+				    </div>
+				
+				    <div class="input-box name-lastname">
+				        <label for="lastname">
+				            {% trans 'Last Name'%}            <span class="required">*</span>
+				        </label>
+				        <br/>
+				        <input type="text" class="required-entry input-text" title="{% trans 'Last Name'%}" value="" name="last_name" id="last_name" maxlength="64"/>
+				        {{form.last_name.errors}}
+				    </div>
+				</div>
+	            </li>
+            <li>
+                <div class="input-box">
+                    <label for="password">{% trans 'Password'%} <span class="required">*</span></label><br/>
+                    <input type="password" class="required-entry validate-password input-text" title="{% trans 'Password'%}" id="password" name="password1"/>
+                    {{form.password1.errors}}
+                </div>
+                <div class="input-box">
+                    <label for="confirmation">{% trans 'Confirm Password'%} <span class="required">*</span></label><br/>
+                    <input type="password" class="required-entry validate-cpassword input-text" id="confirmation" title="{% trans 'Confirm Password'%}" name="password2"/>
+                    {{form.password2.errors}}
+                </div>
+            </li>
+			<li>
+				<div class="paddingtop12">
+					<div class="FloatLeft"><input type="image"  src="{{media_url}}skin/templates/flight/images/submitbtn.gif"/></div><div class="FloatLeft linkafterbutton">
+					<a class="left" href="/customer/account/login/">« {% trans 'Back'%}</a></div>	
+				</div>
+			</li>
+			<li>
+				<p class="required">* {% trans 'Required Fields'%}</p>
+			</li>
+	   </ul>
+    </fieldset>
+    
+</form>
+
+	</div>
+
+{% endblock %}

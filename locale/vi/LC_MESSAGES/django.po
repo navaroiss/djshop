@@ -1,0 +1,311 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-18 02:13-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: settings.py:107
+msgid "Tiếng Việt"
+msgstr ""
+
+#: settings.py:108
+msgid "English"
+msgstr "Tiếng Anh"
+
+#: shopapps/registration/forms.py:35
+#: shopapps/templates/flight/registration/login.html:32
+#: shopapps/templates/flight/registration/login.html:33
+#: shopapps/templates/flight/registration/register.html:20
+#: shopapps/templates/flight/registration/register.html:23
+msgid "Username"
+msgstr "Tên đăng nhập"
+
+#: shopapps/registration/forms.py:37
+#, fuzzy
+msgid "First name"
+msgstr "Tên"
+
+#: shopapps/registration/forms.py:39
+#, fuzzy
+msgid "Last name"
+msgstr "Họ"
+
+#: shopapps/registration/forms.py:42
+#, fuzzy
+msgid "Email address"
+msgstr "Nhập địa chỉ email"
+
+#: shopapps/registration/forms.py:44
+#: shopapps/templates/flight/registration/register.html:60
+#: shopapps/templates/flight/registration/register.html:61
+msgid "Password"
+msgstr "Mật khẩu"
+
+#: shopapps/registration/forms.py:46
+#, fuzzy
+msgid "Password (again)"
+msgstr "Mật khẩu (nhập lại)"
+
+#: shopapps/registration/forms.py:55 shopapps/registration/forms.py:192
+msgid "Usernames can only contain letters, numbers and underscores"
+msgstr "Tên đăng nhập chỉ chứa chữ, số và dấu gạch dưới"
+
+#: shopapps/registration/forms.py:60
+msgid "This username is already taken. Please choose another."
+msgstr "Tên đăng nhập này đã có người sử dụng. Vui lòng chọn tên khác."
+
+#: shopapps/registration/forms.py:72 shopapps/registration/forms.py:206
+msgid "You must type the same password each time"
+msgstr "Mật khẩu phải giống nhau"
+
+#: shopapps/registration/forms.py:111
+msgid ""
+"This email address is already in use. Please supply a different email "
+"address."
+msgstr "Địa chỉ email này đã có người sử dụng. Vui lòng chọn địa chỉ khác."
+
+#: shopapps/registration/forms.py:121
+msgid "I have read and agree to the Terms of Service"
+msgstr "Tôi đã đọc và đồng ý điều khoản của dịch vụ"
+
+#: shopapps/registration/forms.py:130
+msgid "You must agree to the terms to register"
+msgstr "Để đăng ký bạn phải đồng ý với điều khoản"
+
+#: shopapps/registration/forms.py:155
+msgid ""
+"Registration using free email addresses is prohibited. Please supply a "
+"different email address."
+msgstr ""
+
+#: shopapps/registration/forms.py:175
+msgid "username"
+msgstr "Tên đăng nhập"
+
+#: shopapps/registration/forms.py:178
+#, fuzzy
+msgid "email address"
+msgstr "Nhập địa chỉ email"
+
+#: shopapps/registration/forms.py:180
+#: shopapps/templates/flight/registration/login.html:37
+msgid "password"
+msgstr "Mật khẩu"
+
+#: shopapps/registration/forms.py:182
+msgid "password (again)"
+msgstr "Mật khẩu (nhập lại)"
+
+#: shopapps/registration/models.py:190
+msgid "user"
+msgstr ""
+
+#: shopapps/registration/models.py:191
+msgid "activation key"
+msgstr ""
+
+#: shopapps/registration/models.py:196
+msgid "registration profile"
+msgstr ""
+
+#: shopapps/registration/models.py:197
+msgid "registration profiles"
+msgstr ""
+
+#: shopapps/templates/flight/base.html:5
+msgid "Online bags shop"
+msgstr "Shop giỏ laptop online"
+
+#: shopapps/templates/flight/footer.html:5
+msgid "NOW ARRIVING"
+msgstr ""
+
+#: shopapps/templates/flight/footer.html:5
+msgid "Sign up for the newest travel gift ideas in your inbox"
+msgstr "Đăng kí nhận thông tin cập nhật mới nhất"
+
+#: shopapps/templates/flight/footer.html:6
+#: shopapps/templates/flight/footer.html:12
+#: shopapps/templates/flight/footer.html:15
+msgid "Enter your email address"
+msgstr "Nhập địa chỉ email"
+
+#: shopapps/templates/flight/footer.html:29
+msgid "About Us"
+msgstr "Về chúng tôi"
+
+#: shopapps/templates/flight/footer.html:30
+msgid "Store Locations"
+msgstr "Danh sách cửa hàng"
+
+#: shopapps/templates/flight/footer.html:35
+msgid "Return Policy"
+msgstr "Điều kiện trả lại hàng"
+
+#: shopapps/templates/flight/footer.html:36
+msgid "Privacy Policy"
+msgstr "Chính sách"
+
+#: shopapps/templates/flight/footer.html:37
+msgid "Shipping Info"
+msgstr "Vận chuyển"
+
+#: shopapps/templates/flight/footer.html:38
+msgid "Contact Us"
+msgstr "Liên hệ"
+
+#: shopapps/templates/flight/header.html:61
+msgid "Log Out"
+msgstr "Đăng xuất"
+
+#: shopapps/templates/flight/header.html:63
+msgid "Log In"
+msgstr "Đăng nhập"
+
+#: shopapps/templates/flight/header.html:68
+#, python-format
+msgid "Your Cart has %(items_in_bag)s items"
+msgstr "Giỏ hàng có %(items_in_bag)s sản phẩm"
+
+#: shopapps/templates/flight/header.html:69
+#, python-format
+msgid "Your Cart has <strong>%(items_in_bag)s</strong> items"
+msgstr "Giỏ hàng có <strong>%(items_in_bag)s</strong> sản phẩm"
+
+#: shopapps/templates/flight/registration/forgotpassword.html:7
+msgid "Forgot Your Password"
+msgstr "Quên mật khẩu"
+
+#: shopapps/templates/flight/registration/forgotpassword.html:11
+msgid "Retrieve your password here"
+msgstr "Nhận lại mật khẩu"
+
+#: shopapps/templates/flight/registration/forgotpassword.html:12
+msgid "Please enter your email below and we will send you a new password"
+msgstr ""
+"Xin hãy nhập địa chỉ email và password vào ô bên dưới. Vui lòng kiểm tra "
+"email, chúng tôi sẽ gửi mật khẩu vào địa chỉ email của bạn."
+
+#: shopapps/templates/flight/registration/forgotpassword.html:16
+msgid "Email Address"
+msgstr "Nhập địa chỉ email"
+
+#: shopapps/templates/flight/registration/forgotpassword.html:22
+msgid "Back to Login"
+msgstr "Trở lại trang đăng nhập"
+
+#: shopapps/templates/flight/registration/forgotpassword.html:25
+#: shopapps/templates/flight/registration/login.html:47
+#: shopapps/templates/flight/registration/register.html:77
+msgid "Required Fields"
+msgstr "Quan trọng"
+
+#: shopapps/templates/flight/registration/login.html:9
+msgid "Log in or Create an Account"
+msgstr "Đăng nhập hoặc Đăng ký tài khoản"
+
+#: shopapps/templates/flight/registration/login.html:17
+msgid "New Customers"
+msgstr "Đăng kí tài khoản"
+
+#: shopapps/templates/flight/registration/login.html:18
+msgid ""
+"By creating an account with our store, you will be able to move through the "
+"checkout process faster, store multiple shipping addresses, view and track "
+"your orders in your account and more."
+msgstr ""
+"Hãy đăng kí tài khoản để có thể quản lý thông tin cá nhân, thực hiện và theo "
+"dõi các giao dịch một cách tiện lợi, nhanh chóng và an toàn."
+
+#: shopapps/templates/flight/registration/login.html:24
+msgid "Registered Customers"
+msgstr "Đăng kí tài khoản"
+
+#: shopapps/templates/flight/registration/login.html:26
+msgid "Your username and password did not match. Please try again"
+msgstr "Tên đăng nhập hoặc password không tìm thấy. Vui lòng thử lại lần nữa"
+
+#: shopapps/templates/flight/registration/login.html:29
+msgid "Please enter your username and password for login"
+msgstr "Xin lòng nhập thông tin đăng nhập"
+
+#: shopapps/templates/flight/registration/login.html:44
+msgid "Forgot your password"
+msgstr "Quên password"
+
+#: shopapps/templates/flight/registration/login.html:56
+#, python-format
+msgid "Welcome, %(user)s"
+msgstr "Xin chào, %(user)s"
+
+#: shopapps/templates/flight/registration/logout.html:13
+msgid "You have been logged out"
+msgstr "Bạn đã đăng nhập"
+
+#: shopapps/templates/flight/registration/logout.html:19
+msgid "You will be redirected to the homepage in 3 seconds"
+msgstr "Bạn sẽ được chuyển về trang chủ sau 3 giây"
+
+#: shopapps/templates/flight/registration/logout.html:21
+msgid "click here to log in again"
+msgstr "Click vào đây để đăng nhập lại"
+
+#: shopapps/templates/flight/registration/register.html:8
+msgid "Create an Account"
+msgstr "Tạo một tài khoản"
+
+#: shopapps/templates/flight/registration/register.html:28
+msgid "Email"
+msgstr "Tài khoản email"
+
+#: shopapps/templates/flight/registration/register.html:31
+#: shopapps/templates/flight/registration/register.html:50
+#: shopapps/templates/flight/registration/register.html:53
+msgid "Last Name"
+msgstr "Họ"
+
+#: shopapps/templates/flight/registration/register.html:41
+#: shopapps/templates/flight/registration/register.html:44
+msgid "First Name"
+msgstr "Tên"
+
+#: shopapps/templates/flight/registration/register.html:65
+#: shopapps/templates/flight/registration/register.html:66
+msgid "Confirm Password"
+msgstr "Xác nhận mật khẩu"
+
+#: shopapps/templates/flight/registration/register.html:73
+msgid "Back"
+msgstr "Trở lại"
+
+#: shopapps/templates/flight/registration/registration_complete.html:8
+msgid "New User Account Created"
+msgstr "Tài khoản của bạn đã được đăng kí thành công."
+
+#: shopapps/templates/flight/registration/registration_complete.html:13
+msgid "Welcome! You are now registered as a member"
+msgstr "Xin chào người bạn mới!"
+
+#~ msgid "email"
+#~ msgstr "Tài khoản email"
+
+#~ msgid "Personal Information"
+#~ msgstr "Thông tin đăng nhập"
+
+#~ msgid "Sign Up for Newsletter"
+#~ msgstr "Đăng kí thư mới"
+
+#~ msgid "Login Information"
+#~ msgstr "Thông tin đăng nhập"

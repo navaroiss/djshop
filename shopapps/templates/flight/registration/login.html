@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block content%}
+
+<div style="width: 940px;" class="FloatLeft content-part">
+
+{% if not user.id %}
+<div class="page-head">
+    <h3>{% trans "Log in or Create an Account" %}</h3>
+</div>
+<form id="login-form" method="post" action="">
+<input type="hidden" name="next" value="/"/>
+
+<div class="col2-set login-box">
+    <div class="col-1 new-users">
+        <div class="content">
+            <h4>{% trans "New Customers" %}</h4>
+            <p>{% trans "By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more."%}</p>
+            <a class="create_account_btn" href="/customer/account/register/"></a>
+			</div>
+    </div>
+    <div class="col-2 registered-users">
+        <div class="content">
+            <h4>{% trans 'Registered Customers' %}</h4>
+            {% if form.errors %}
+            <p>{% trans 'Your username and password did not match. Please try again' %}.</p>
+            {% endif %}
+            
+            <p>{% trans 'Please enter your username and password for login' %}: </p>
+            <ul class="form-list">
+				<li>
+					<label for="username">{% trans 'Username' %} <span class="required">*</span></label><br/>
+					<input type="text" style="width: 250px;" class="input-text required-entry" maxlength="255" id="email" title="{% trans 'Username'%}" value="" name="username"/>
+					{{form.username.errors}}
+				</li>
+				<li>
+					<label for="pass">{% trans 'password' %} <span class="required">*</span></label><br/>
+					<input type="password" style="width: 250px;" id="pass" class="input-text required-entry validate-password" maxlength="32" name="password"/>
+					{{form.password.errors}}
+				</li>
+				<li>
+					<div class="FloatLeft"><input type="image" src="{{media_url}}skin/templates/flight/images/loginbtnbase.gif"/></div>
+					<div class="FloatLeft linkafterbutton">
+					<a class="left" href="/customer/account/forgotpassword/">{% trans 'Forgot your password' %}?</a></div>
+				</li>
+				<li>
+					<p class="required">* {% trans 'Required Fields' %}</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</form>
+
+{% else %}
+	{% blocktrans %}Welcome, {{user}}{% endblocktrans %}
+{% endif %}
+	</div>
+	
+{% endblock %}
